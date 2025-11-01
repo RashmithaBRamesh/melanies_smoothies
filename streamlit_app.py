@@ -43,7 +43,7 @@ if ingredients_list:
         st.subheader(f"{fruit_chosen} Nutrition Information")
 
         try:
-            response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{fruit_chosen}")
+            response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{search_on}")
             if response.status_code == 200:
                 data = response.json()
                 st.dataframe(data=data, use_container_width=True)
