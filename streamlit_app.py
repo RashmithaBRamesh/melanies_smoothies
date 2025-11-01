@@ -6,6 +6,7 @@ from snowflake.snowpark.functions import col
 # Write directly to the app
 st.title("🥤 Customize Your Smoothie! 🥤")
 st.write("Choose the fruits you want in your custom smoothie")
+st.write("The name on your Smoothie will be:", name_on_order)
 
 # Input name
 name_on_order = st.text_input("Name on Smoothie:")
